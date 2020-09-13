@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57D15D84"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CD2760"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/usernameAuth"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/rounded_edges"
+        android:ems="10"
+        android:hint=" Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textSelectPic"
+        android:layout_width="203dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="select your profile picture"
+        android:textColorHint="#320B27"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameAuth"
+        app:layout_constraintEnd_toEndOf="@+id/usernameAuth"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView"
+        app:layout_constraintTop_toBottomOf="@+id/SIGNUP"
+        app:layout_constraintVertical_bias="0.862" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:text="minimum password length: 6 letters"
+        app:layout_constraintBottom_toTopOf="@+id/passwordAuth"
+        app:layout_constraintEnd_toEndOf="@+id/passwordAuth"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordAuth"
+        app:layout_constraintTop_toBottomOf="@+id/mailAuth"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/profilepicRegister"
+        android:layout_width="106dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_select_photo"
+        android:hint="click here"
+        app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+        app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/circleImageView"
+        app:layout_constraintTop_toTopOf="@+id/circleImageView"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/SIGNUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sign Up "
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameAuth"
+        app:layout_constraintEnd_toEndOf="@+id/usernameAuth"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/usernameAuth"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <EditText
+        android:id="@+id/mailAuth"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_edges"
+        android:ems="10"
+        android:hint=" E-Mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/usernameAuth"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usernameAuth"
+        app:layout_constraintTop_toTopOf="@+id/usernameAuth" />
+
+    <TextView
+        android:id="@+id/alreadyHaveAcc"
+        android:layout_width="162dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:clickable="true"
+        android:text="Already have an account?"
+        app:layout_constraintEnd_toEndOf="@+id/registerButton"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="174dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/passwordAuth"
+        app:layout_constraintStart_toStartOf="@+id/passwordAuth"
+        app:layout_constraintTop_toBottomOf="@+id/passwordAuth" />
+
+    <EditText
+        android:id="@+id/passwordAuth"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edges"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/mailAuth"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mailAuth"
+        app:layout_constraintTop_toBottomOf="@+id/mailAuth" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="106dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameAuth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Welcome to Chatty"
+
+        android:textColor="#320B27"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "479170659898",
+    "firebase_url": "https://chatappbetti.firebaseio.com",
+    "project_id": "chatappbetti",
+    "storage_bucket": "chatappbetti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479170659898:android:c394143a36d0fecf8fd703",
+        "android_client_info": {
+          "package_name": "com.fhjoanneum.chatty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479170659898-gu0bn7nsvsjo8v9r92i1cp02il78ta71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeNG-kWS7JvBhORBo7v0VLUIABGlMwL8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479170659898-gu0bn7nsvsjo8v9r92i1cp02il78ta71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
